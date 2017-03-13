@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>File Metadata Microservice</title>
+    <meta name="description" content="File Metadata Microservice">
+    <meta name="Sara C" content="node/express API">
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="page-content">
+        <div class="container">
+            <h1>FreeCodeCamp API Basejump: File Metadata Microservice</h1>
+            <blockquote>
+                <h3> User stories:</h3>
+
+                <ol>
+                    <li> I can submit a FormData object that includes a file upload.</li>
+                    <li>When I submit something, I will receive the file size in bytes within the JSON response.</li>
+                    <li>File types limited to .gif, .jpg, .png, .doc, .txt, .docx, .txt for security.</li>
+
+                </ol>
+            </blockquote>
+
+            <h3>Submit a file to view its filesize:</h3>
+            <form action="/send" method="POST" enctype="multipart/form-data">
+                <input type="file" name="avatar" placeholder="Upload your file" accept="[.gif, .jpg, .png, .doc, .txt, .docx, .txt]">
+                <input type="submit" value="Click here to submit the form">
+            </form>
+        </div>
+        <!--close container-->
+    </div>
+
+
+</body>
+
+</html>
